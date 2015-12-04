@@ -37,7 +37,8 @@ var locateMe = {
     },
     onFailure: function(error)
     {
-
+	locateMe.locationMap.innerHTML = 'Please make sure your GPS is enabled if so then maybe its the browser permissions';
+	console.log('Error: ' + error.message);
     },
     setCoordinatesData: function(coords)
     {
